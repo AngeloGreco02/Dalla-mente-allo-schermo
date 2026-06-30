@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dalla mente allo schermo - Tesi interattiva</title>
+    <meta
+      name="description"
+      content="Sito interattivo tratto dalla tesi di Angelo Greco su neurodivergenze, disabilità invisibili, ADHD, DOC e media digitali."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" data-nav="home" aria-label="Torna alla panoramica">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Dalla mente allo schermo</span>
+      </a>
+      <nav class="nav" aria-label="Sezioni del sito">
+        <button class="nav-button is-active" type="button" data-nav="home">Panoramica</button>
+        <button class="nav-button" type="button" data-nav="studio">Studio</button>
+        <button class="nav-button" type="button" data-nav="concetti">Concetti</button>
+        <button class="nav-button" type="button" data-nav="campagne">Campagne</button>
+        <button class="nav-button" type="button" data-nav="esperienze">Esperienze</button>
+      </nav>
+      <a class="download-link" href="assets/tesi-angelo-greco.pdf" download>PDF</a>
+    </header>
+
+    <main>
+      <section id="home" class="screen is-active" aria-labelledby="home-title">
+        <div class="hero-band">
+          <div class="hero-media" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">Tesi di laurea - Comunicazione, Media Digitali e Giornalismo</p>
+            <h1 id="home-title">Dalla mente allo schermo: neurodivergenze e disabilità invisibili nei media digitali</h1>
+            <p class="hero-lead">
+              Un percorso interattivo per studiare la tesi e per farla capire a chi incontra il tema per la prima volta:
+              stigma, sguardo, piattaforme, ADHD, DOC e Art Direction esperienziale.
+            </p>
+            <div class="hero-actions" aria-label="Percorsi principali">
+              <button class="primary-action" type="button" data-nav="studio">Ripassa la tesi</button>
+              <button class="secondary-action" type="button" data-nav="esperienze">Prova le esperienze</button>
+            </div>
+          </div>
+          <aside class="thesis-facts" aria-label="Dati della tesi">
+            <div>
+              <strong>126</strong>
+              <span>pagine</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>movimenti</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>campagne</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Domanda guida</p>
+            <h2>Perché le disabilità invisibili continuano a non essere credute?</h2>
+            <p>
+              La tesi sostiene che il problema non è solo clinico: è culturale, mediatico e comunicativo. Se una fatica non
+              si vede, viene spesso ridotta a capriccio, difetto caratteriale o contenuto estetico.
+            </p>
+          </div>
+
+          <div class="chapter-grid" aria-label="Struttura della tesi">
+            <article class="chapter-card" data-progress-card="capitolo-1">
+              <div class="chapter-number">01</div>
+              <h3>Invisibilità e stigma</h3>
+              <p>
+                Disabilità invisibili, società oculocentrica, DSM-5, Goffman, masking, ICF e Spoon Theory come linguaggio
+                per raccontare l'energia che non si vede.
+              </p>
+              <button type="button" class="text-button" data-mark-progress="capitolo-1">Segna ripassato</button>
+            </article>
+            <article class="chapter-card" data-progress-card="capitolo-2">
+              <div class="chapter-number">02</div>
+              <h3>La vetrinizzazione</h3>
+              <p>
+                Dalla macchietta televisiva al contenuto "quirky": CleanTok, ADHD aesthetic, sadfishing e piattaforme che
+                premiano ciò che trattiene attenzione.
+              </p>
+              <button type="button" class="text-button" data-mark-progress="capitolo-2">Segna ripassato</button>
+            </article>
+            <article class="chapter-card" data-progress-card="capitolo-3">
+              <div class="chapter-number">03</div>
+              <h3>Art Direction</h3>
+              <p>
+                Il progetto visuale prova a non descrivere il limite dall'esterno, ma a farlo attraversare: glitch per ADHD,
+                loop per DOC, micrositi e contenuti social.
+              </p>
+              <button type="button" class="text-button" data-mark-progress="capitolo-3">Segna ripassato</button>
+            </article>
+          </div>
+
+          <div class="summary-band">
+            <div>
+              <p class="eyebrow">Sintesi in 60 secondi</p>
+              <h2>La tesi in una frase</h2>
+            </div>
+            <p>
+              I media tradizionali e digitali rendono visibili ADHD e DOC attraverso scorciatoie rassicuranti, ma proprio
+              queste scorciatoie cancellano l'esperienza interiore; una comunicazione etica deve quindi progettare ambienti,
+              non icone.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="studio" class="screen" aria-labelledby="studio-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Modalità studio</p>
+            <h2 id="studio-title">Flashcard, quiz e mappa di ripasso</h2>
+            <p>
+              Questa sezione trasforma capitoli e concetti in memoria attiva: parole chiave, domande a scelta multipla e
+              tracciamento locale del ripasso.
+            </p>
+          </div>
+
+          <div class="study-layout">
+            <section class="tool-panel" aria-labelledby="flashcard-title">
+              <div class="panel-heading">
+                <p class="eyebrow">Flashcard</p>
+                <h3 id="flashcard-title">Concetti chiave</h3>
+              </div>
+              <div class="flashcard" id="flashcard" tabindex="0" role="group" aria-live="polite">
+                <p class="flashcard-kicker" id="flashcard-kicker">1 / 9</p>
+                <h4 id="flashcard-term">Disabilità invisibile</h4>
+                <p id="flashcard-definition">
+                  Una condizione reale che non offre allo sguardo un segno fisico immediatamente riconoscibile.
+                </p>
+              </div>
+              <div class="button-row">
+                <button type="button" class="icon-button" id="prev-card" aria-label="Flashcard precedente">&lsaquo;</button>
+                <button type="button" class="secondary-action" id="flip-card">Mostra risposta</button>
+                <button type="button" class="icon-button" id="next-card" aria-label="Flashcard successiva">&rsaquo;</button>
+              </div>
+              <button type="button" class="primary-action full-width" id="known-card">La so</button>
+            </section>
+
+            <section class="tool-panel" aria-labelledby="quiz-title">
+              <div class="panel-heading">
+                <p class="eyebrow">Quiz</p>
+                <h3 id="quiz-title">8 domande per fissare la tesi</h3>
+              </div>
+              <div class="quiz-status">
+                <span id="quiz-count">Domanda 1 di 8</span>
+                <span id="quiz-score">0 corrette</span>
+              </div>
+              <div class="quiz-question" id="quiz-question" aria-live="polite"></div>
+              <div class="quiz-options" id="quiz-options"></div>
+              <div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div>
+              <button type="button" class="secondary-action full-width" id="next-question">Prossima</button>
+            </section>
+          </div>
+
+          <section class="reading-map" aria-labelledby="map-title">
+            <div class="section-heading compact">
+              <p class="eyebrow">Mappa</p>
+              <h2 id="map-title">Cosa ricordare capitolo per capitolo</h2>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item">
+                <span>1</span>
+                <h3>Dal manuale clinico alla società</h3>
+                <p>
+                  ADHD e DOC non sono trattati come semplici etichette mediche, ma come esperienze che diventano più
+                  difficili quando l'ambiente pretende normalità uniforme.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <span>2</span>
+                <h3>Lo sguardo decide cosa sembra vero</h3>
+                <p>
+                  La cultura oculocentrica privilegia ciò che si vede. Quando il limite non ha forma, la persona deve
+                  dimostrare continuamente la propria credibilità.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <span>3</span>
+                <h3>L'algoritmo estetizza il disagio</h3>
+                <p>
+                  Le piattaforme non distinguono tra accuratezza clinica e contenuto virale: selezionano ciò che produce
+                  permanenza, riconoscimento immediato e interazioni.
+                </p>
+              </article>
+              <article class="timeline-item">
+                <span>4</span>
+                <h3>Il visual design diventa ipotesi</h3>
+                <p>
+                  Glitch e loop sono proposte da verificare: non chiudono il discorso, ma aprono una strada per testare se
+                  un'immagine può aumentare comprensione e credibilità.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="concetti" class="screen" aria-labelledby="concetti-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Lessico della tesi</p>
+            <h2 id="concetti-title">Concetti che tengono insieme teoria e progetto</h2>
+            <p>
+              Le parole chiave funzionano come una rete: stigma, masking, Spoon Theory, oculocentrismo e vetrinizzazione
+              portano tutte alla stessa domanda sulla rappresentazione.
+            </p>
+          </div>
+
+          <div class="concept-grid" id="concept-grid"></div>
+
+          <section class="tool-panel wide" aria-labelledby="spoon-title">
+            <div class="panel-heading">
+              <p class="eyebrow">Spoon Theory</p>
+              <h3 id="spoon-title">Budget di energia invisibile</h3>
+            </div>
+            <p class="panel-copy">
+              La tesi usa la Spoon Theory come ponte tra esperienza vissuta e comunicazione pubblica: non tutto ciò che
+              consuma energia è visibile dall'esterno.
+            </p>
+            <div class="spoon-grid">
+              <label class="spoon-option">
+                <input type="checkbox" value="2" checked />
+                <span>Iniziare un compito senza struttura</span>
+              </label>
+              <label class="spoon-option">
+                <input type="checkbox" value="3" checked />
+                <span>Gestire notifiche e interruzioni</span>
+              </label>
+              <label class="spoon-option">
+                <input type="checkbox" value="2" />
+                <span>Mascherare la fatica in pubblico</span>
+              </label>
+              <label class="spoon-option">
+                <input type="checkbox" value="3" />
+                <span>Rientrare in un loop ossessivo</span>
+              </label>
+              <label class="spoon-option">
+                <input type="checkbox" value="1" />
+                <span>Spiegare perché "non si vede"</span>
+              </label>
+              <label class="spoon-option">
+                <input type="checkbox" value="2" />
+                <span>Recuperare dopo sovraccarico</span>
+              </label>
+            </div>
+            <div class="meter-row">
+              <div class="meter-block">
+                <span>Capacità ideale</span>
+                <div class="meter"><span style="width: 100%"></span></div>
+              </div>
+              <div class="meter-block">
+                <span>Performance residua</span>
+                <div class="meter warning"><span id="spoon-meter" style="width: 58%"></span></div>
+              </div>
+              <strong id="spoon-total">7 cucchiai rimasti</strong>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="campagne" class="screen" aria-labelledby="campagne-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Art Direction</p>
+            <h2 id="campagne-title">Due campagne per educare l'invisibile</h2>
+            <p>
+              La parte progettuale non cerca il simbolo perfetto della diagnosi: costruisce un ambiente che rende percepibile
+              l'attrito cognitivo.
+            </p>
+          </div>
+
+          <div class="campaign-split">
+            <article class="campaign-panel adhd">
+              <img src="assets/adhd-ledwall.png" alt="Visual ADHD su LED wall urbano con desktop sovraccarico" />
+              <div>
+                <p class="eyebrow">ADHD</p>
+                <h3>Non è distrazione. È sovraccarico.</h3>
+                <p>
+                  L'estetica del glitch traduce il deficit di filtro: troppe informazioni simultanee competono per la stessa
+                  capacità esecutiva.
+                </p>
+              </div>
+            </article>
+            <article class="campaign-panel doc">
+              <img src="assets/doc-ledwall.png" alt="Visual DOC su LED wall urbano con diagramma di loop" />
+              <div>
+                <p class="eyebrow">DOC</p>
+                <h3>Non è una scelta. È un loop.</h3>
+                <p>
+                  Il diagramma chiuso sposta l'attenzione dall'ordine estetico alla coercizione del pensiero intrusivo.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="gallery-grid" aria-label="Galleria visuale della tesi">
+            <button class="gallery-card" type="button" data-lightbox="assets/adhd-microsite.png">
+              <img src="assets/adhd-microsite.png" alt="Mockup di microsito ADHD con finestre sovrapposte" />
+              <span>Microsito ADHD</span>
+            </button>
+            <button class="gallery-card" type="button" data-lightbox="assets/adhd-social-overload.png">
+              <img src="assets/adhd-social-overload.png" alt="Frame social ADHD con notifiche sovrapposte" />
+              <span>Social overload</span>
+            </button>
+            <button class="gallery-card" type="button" data-lightbox="assets/doc-loop-diagram.png">
+              <img src="assets/doc-loop-diagram.png" alt="Diagramma del loop ossessivo compulsivo" />
+              <span>Loop DOC</span>
+            </button>
+            <button class="gallery-card" type="button" data-lightbox="assets/doc-social-final.png">
+              <img src="assets/doc-social-final.png" alt="Frame finale campagna DOC con testo sul loop" />
+              <span>Frame conclusivo DOC</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="esperienze" class="screen" aria-labelledby="esperienze-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Show, don't tell</p>
+            <h2 id="esperienze-title">Due micro-esperienze tratte dal concept</h2>
+            <p>
+              Sono versioni leggere e controllate dei due moduli progettuali della tesi: una simula saturazione, l'altra
+              restituisce la ricorsività del loop.
+            </p>
+          </div>
+
+          <div class="experience-grid">
+            <section class="simulator-shell adhd-sim" aria-labelledby="adhd-sim-title">
+              <div class="sim-header">
+                <div>
+                  <p class="eyebrow">ADHD</p>
+                  <h3 id="adhd-sim-title">Sovraccarico esecutivo</h3>
+                </div>
+                <button type="button" class="primary-action" id="start-adhd">Avvia</button>
+              </div>
+              <div class="desktop-sim" id="desktop-sim">
+                <div class="window main-window">
+                  <span>Documento importante</span>
+                  <strong>Scrivi l'introduzione</strong>
+                  <p>Tre righe chiare. Una priorità. Un tempo limitato.</p>
+                </div>
+                <div class="desktop-dock">
+                  <span>YouTube</span>
+                  <span>Gmail</span>
+                  <span>Slack</span>
+                  <span>Calendario</span>
+                </div>
+              </div>
+              <div class="capacity">
+                <span>Capacità esecutiva</span>
+                <div class="meter"><span id="adhd-capacity" style="width: 100%"></span></div>
+              </div>
+            </section>
+
+            <section class="simulator-shell doc-sim" aria-labelledby="doc-sim-title">
+              <div class="sim-header">
+                <div>
+                  <p class="eyebrow">DOC</p>
+                  <h3 id="doc-sim-title">ObsessiveLoop</h3>
+                </div>
+                <button type="button" class="secondary-action" id="reset-doc">Reset</button>
+              </div>
+              <div class="loop-board" id="loop-board">
+                <div class="loop-node thought">Pensiero intrusivo</div>
+                <p id="loop-message">Cosa faccio con questo pensiero?</p>
+                <div class="loop-options" id="loop-options">
+                  <button type="button" data-loop="ignore">Ignoralo</button>
+                  <button type="button" data-loop="relax">Rilassati</button>
+                  <button type="button" data-loop="move">Vai avanti</button>
+                </div>
+                <div class="loop-node anxiety" id="loop-state">Ansia in attesa</div>
+              </div>
+            </section>
+          </div>
+
+          <section class="closing-note" aria-label="Nota etica">
+            <strong>Nota etica</strong>
+            <p>
+              Questo sito racconta una tesi e non offre diagnosi o indicazioni terapeutiche. Le esperienze sono simulazioni
+              comunicative, non rappresentazioni complete di ADHD o DOC.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Anteprima immagine">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Chiudi anteprima">&times;</button>
+      <img
+        id="lightbox-image"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        alt=""
+      />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
